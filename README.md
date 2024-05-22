@@ -48,4 +48,8 @@ O analisador léxico desenvolvido neste projeto lê um arquivo de texto contendo
     make run INPUT=input.txt OUTPUT=output.txt
     ```
     - Onde `input.txt` é o arquivo contendo o código PL/0 e `output.txt` é o arquivo onde a saída será gravada.
-
+  
+  ## Contribuidores
+    - Mateus Curtolo de Goes
+    - Gustavo B. Sanchez
+    - Matheus dos Santos Inês
