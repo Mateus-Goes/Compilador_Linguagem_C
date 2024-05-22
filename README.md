@@ -1,5 +1,4 @@
-# Construção de um Compilador usando C - Etapa 1: Analisador Léxico para PL/0
-
+# Construção de um Compilador usando C - Etapa 1: Analisador Léxico
 ![Exemplo de Análise Léxica](img1.png)
 
 ## Descrição do Projeto
