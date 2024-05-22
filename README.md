@@ -1,5 +1,7 @@
 # Construção de um Compilador usando C - Etapa 1: Analisador Léxico para PL/0
 
+![Exemplo de Análise Léxica](images/image.png)
+
 ## Descrição do Projeto
 Este projeto envolve o desenvolvimento de um compilador em C, focado especificamente na etapa de análise léxica. O compilador foi projetado para analisar a linguagem de programação PL/0. A análise léxica é uma etapa fundamental no processo de compilação, responsável por converter o texto de entrada em uma sequência de tokens que serão utilizados na análise sintática subsequente.
 
