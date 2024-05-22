@@ -1,14 +1,13 @@
-# Analisador Léxico para PL/0
+# Construção de um Compilador usando C - Etapa 1: Analisador Léxico para PL/0
 
 ## Descrição do Projeto
-Este projeto consiste no desenvolvimento de um analisador léxico para a linguagem de programação PL/0. A análise léxica é uma etapa crucial no processo de compilação, responsável por converter o texto de entrada em uma sequência de tokens que são utilizados na análise sintática subsequente.
+Este projeto envolve o desenvolvimento de um compilador em C, focado especificamente na etapa de análise léxica. O compilador foi projetado para analisar a linguagem de programação PL/0. A análise léxica é uma etapa fundamental no processo de compilação, responsável por converter o texto de entrada em uma sequência de tokens que serão utilizados na análise sintática subsequente.
 
 O analisador léxico desenvolvido neste projeto lê um arquivo de texto contendo código em PL/0 e gera um arquivo de saída com os tokens identificados, juntamente com suas classes. Além disso, o analisador reporta quaisquer erros léxicos encontrados durante o processamento.
 
 ## Estrutura do Repositório
 - `main.c`: Código fonte do analisador léxico em C.
 - `Makefile`: Arquivo de configuração para compilação do projeto.
-- `Trabalho1-especificacao.pdf`: Especificação original do trabalho fornecida pelo professor.
 - `Relatorio.pdf`: Relatório detalhado do projeto contendo decisões de projeto, diagramas de autômatos, instruções de compilação e execução, e exemplos de saída.
 
 ## Tecnologias Utilizadas
@@ -48,36 +47,3 @@ O analisador léxico desenvolvido neste projeto lê um arquivo de texto contendo
     ```
     - Onde `input.txt` é o arquivo contendo o código PL/0 e `output.txt` é o arquivo onde a saída será gravada.
 
-### Exemplo de Execução
-#### Arquivo de Entrada (input.txt)
-```plaintext
-CONST pi = 3; { definição de constante }
-VAR x, y, z; { declaração de variáveis }
-
-PROCEDURE calcArea;
-VAR radius;
-BEGIN
-  radius := 2;
-  x := pi * radius * radius; { cálculo da área do círculo }
-END;
-
-BEGIN
-  x := 10;
-  y := 20;
-  z := x + y;
-  CALL calcArea; { chamada de procedimento }
-  IF x > y THEN { condicional }
-    z := x - y;
-  WHILE z <> 0 DO { loop }
-    z := z - 1;
-
-  { Teste de operadores unários e relacionais }
-  IF ODD x THEN
-    z := -z;
-  IF x = y THEN
-    z := z / 2;
-  IF x <= y THEN
-    z := z * 2;
-  IF x >= y THEN
-    z := z + 100;
-END.
